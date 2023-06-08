@@ -7,5 +7,4 @@ headers = {"Content-Type": "application/json","Authorization": f"Bearer {hf_apik
 query=input('Type your request: ')
 payload = {"prompt": query}
 response = requests.post(url, headers=headers, data=json.dumps(payload))
-result = response.json()
-print(result[0][1])
+print(response.json())
