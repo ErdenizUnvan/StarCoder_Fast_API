@@ -42,7 +42,7 @@ def generate(request: GenerateRequest):
     for output in client.generate(prompt, **generate_kwargs):
         response.append(output)
 
-    return response
+    return response[0][1]
 
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port=8000)
