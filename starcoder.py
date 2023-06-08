@@ -8,7 +8,6 @@ app = FastAPI()
 API_URL = "https://api-inference.huggingface.co/models/bigcode/starcoder/"
 hf_apikey = 'Write Your Hugging Face API KEY'
 
-#HF_TOKEN = os.environ.get(hf_apikey, None)
 headers = {"Authorization": f"Bearer {hf_apikey}"}
 client = Client(API_URL, headers=headers)
 
