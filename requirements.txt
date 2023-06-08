@@ -1,0 +1,5 @@
+huggingface_hub
+text-generation==0.4.1
+requests
+fastapi
+uvicorn
